@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+$mobile:375px;
+$desktop:1440px;
+
+//Colours
+
+//Primary
+$bright-orange: hsl(31, 77%, 52%);
+$dark-cyan: hsl(184, 100%, 22%);
+$very-dark-cyan: hsl(179, 100%, 13%);
+
+//Neutral
+//for paragraphs
+$transparent-white: hsla(0, 0%, 100%, 0.75);
+
+//for background, headings, buttons
+$very-light-gray: hsl(0, 0%, 95%);
+
+/*
+Body
+font-size:15px;
+[Lexend Deca] - Weights: 400
+[Big Shoulders Display] - Weights: 700
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.container{
+
+    // border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: auto;
+    margin-top: 10%;
+
+    .box{
+        padding: 2.5rem;
+    }
+
+    img{
+        margin-bottom: 1.8rem;
+    }
+
+    h1{
+        color: $very-light-gray;
+        margin-bottom: 2rem;
+        font-family: "Big Shoulders Display";
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    .paras{
+        color: $transparent-white;
+        font-family: "Lexend Deca";
+        font-weight: 400;
+        font-size: 15px;
+        margin-bottom: 2rem;
+    }
+
+    .btn{
+        padding: .6rem 1.5rem;
+        
+        margin-left: .5rem;
+        border: 0;
+        border-radius: 1.5rem;
+        font-size: 1rem;
+        font-family: "Lexend Deca";
+        font-weight: 400;
+    }
+
+    .sedan{
+        background-color: $bright-orange;
+        border-radius: .5rem .5rem 0 0;
+        
+        
+        .btn{
+            color: $bright-orange;
+        }
+
+        .btn:hover{
+            background-color: $bright-orange;
+            border: solid white;
+            color: white;
+        }
+        
+    }
+
+    .suv{
+        background-color: $dark-cyan;
+        
+
+        .btn{
+            color: $dark-cyan;
+        }
+
+        .btn:hover{
+            background-color: $dark-cyan;
+            border: solid white;
+            color: white;
+        }
+    }
+
+    .luxury{
+        background-color: $very-dark-cyan;
+        border-radius: 0 0 .5rem .5rem;
+        
+
+        .btn{
+            color: $very-dark-cyan;
+        }
+
+        .btn:hover{
+            background-color: $very-dark-cyan;
+            border: solid white;
+            color: white;
+        }
+    }
+}
+
+.attribution {
+    // position: fixed;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+
+  @media(min-width:800px) and (max-width:1000px){
+      .container{
+        //   border: 2px solid black;
+          display: grid;
+          grid-template-columns: 50% 50%;
+          margin-top: 2rem;
+
+          .btn{
+              cursor: pointer;
+          }
+
+          .btn:active{
+              background-color: $transparent-white;
+          }
+
+          .sedan{
+              border-radius: .5rem 0 0 0;
+          }
+
+          .suv{
+              border-radius: 0 .5rem .5rem 0;
+          }
+      }
+  }
+
+
+  @media (min-width:1000px){
+      
+    .container{
+        flex-direction: row;
+        max-width: 800px;
+        margin-top: 7rem;
+
+        h1{
+            font-size: 2.2rem;
+        }
+
+        .paras{
+            
+        }
+
+        .btn{
+            margin-top: 3rem;
+            margin-bottom: .7rem;
+            cursor: pointer;
+        }
+
+
+        .sedan{
+            border-radius: .5rem 0 0 .5rem;
+
+            .btn:hover{
+                background-color: $bright-orange;
+                border: solid white;
+                color: white;
+            }
+        }
+
+        .suv{
+            .btn{
+                margin-top: 4.2rem;
+            }
+            .btn:hover{
+                background-color: $dark-cyan;
+                border: solid white;
+                color: white;
+            }
+        }
+
+        .luxury{
+            border-radius: 0 .5rem .5rem 0;
+
+            .btn:hover{
+                background-color: $very-dark-cyan;
+                border: solid white;
+                color: white;
+            }
+        }
+    }
+
+    .attribution{
+        margin-top: 6rem;
+        font-size: 15px;
+        text-align: left;
+        margin-left: 5px;
+        padding-bottom: 1rem;
+    }
+  }
