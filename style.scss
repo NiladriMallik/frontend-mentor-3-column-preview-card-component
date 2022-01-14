@@ -40,7 +40,7 @@ font-size:15px;
     // border: 2px solid black;
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 90%;
     margin: auto;
     margin-top: 10%;
 
@@ -141,33 +141,34 @@ font-size:15px;
   }
 
 
-  @media(min-width:800px) and (max-width:1000px){
-      .container{
-        //   border: 2px solid black;
-          display: grid;
-          grid-template-columns: 50% 50%;
-          margin-top: 2rem;
+@media(min-width:800px) and (max-width:1000px){
+    .container{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin-top: 2rem;
+        margin: auto;
 
-          .btn{
-              cursor: pointer;
-          }
+        .btn{
+            cursor: pointer;
+        }
 
-          .btn:active{
-              background-color: $transparent-white;
-          }
+        .btn:active{
+            background-color: $transparent-white;
+        }
 
-          .sedan{
-              border-radius: .5rem 0 0 0;
-          }
+        .sedan{
+            border-radius: .5rem 0 0 0;
+        }
 
-          .suv{
-              border-radius: 0 .5rem .5rem 0;
-          }
-      }
-  }
+        .suv{
+            border-radius: 0 .5rem .5rem 0;
+        }
+    }
+}
 
 
-  @media (min-width:1000px){
+@media (min-width:1000px){
       
     .container{
         flex-direction: row;
