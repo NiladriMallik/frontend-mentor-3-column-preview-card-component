@@ -34,6 +34,10 @@ font-size:15px;
     
 }
 
+body{
+    background-color: $very-light-gray;
+}
+
 
 .container{
 
@@ -90,8 +94,10 @@ font-size:15px;
 
         .btn:hover{
             background-color: $bright-orange;
-            border: solid white;
-            color: white;
+            border: 2px solid $very-light-gray;
+            color: $very-light-gray;
+            margin-bottom: -4px;
+
         }
         
     }
@@ -106,8 +112,10 @@ font-size:15px;
 
         .btn:hover{
             background-color: $dark-cyan;
-            border: solid white;
-            color: white;
+            border: 2px solid $very-light-gray;
+            color: $very-light-gray;
+            margin-bottom: -4px;
+
         }
     }
 
@@ -122,8 +130,10 @@ font-size:15px;
 
         .btn:hover{
             background-color: $very-dark-cyan;
-            border: solid white;
-            color: white;
+            border: 2px solid $very-light-gray;
+            color: $very-light-gray;
+            margin-bottom: -4px;
+
         }
     }
 }
@@ -142,10 +152,14 @@ font-size:15px;
 
 
 @media(min-width:800px) and (max-width:1000px){
+
+    *{
+        padding-top: 1rem;
+    }
     .container{
         width: 90%;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: repeat(3,1fr);
         margin-top: 2rem;
         margin: auto;
 
@@ -153,15 +167,16 @@ font-size:15px;
             cursor: pointer;
         }
 
-        .btn:active{
-            background-color: $transparent-white;
-        }
 
         .sedan{
-            border-radius: .5rem 0 0 0;
+            border-radius: .5rem 0 0 .5rem;
         }
 
         .suv{
+            border-radius: 0;
+        }
+
+        .luxury{
             border-radius: 0 .5rem .5rem 0;
         }
     }
@@ -169,6 +184,10 @@ font-size:15px;
 
 
 @media (min-width:1000px){
+
+    *{
+        padding: 0;
+    }
       
     .container{
         flex-direction: row;
@@ -189,14 +208,19 @@ font-size:15px;
             cursor: pointer;
         }
 
+        // .btn:hover{
+        //     padding: 1rem solid ;
+        // }
+
 
         .sedan{
             border-radius: .5rem 0 0 .5rem;
 
             .btn:hover{
                 background-color: $bright-orange;
-                border: solid white;
-                color: white;
+                border: 2px solid $very-light-gray;
+                color: $very-light-gray;
+                margin-bottom: -4px;
             }
         }
 
@@ -206,8 +230,9 @@ font-size:15px;
             }
             .btn:hover{
                 background-color: $dark-cyan;
-                border: solid white;
-                color: white;
+                border: 2px solid $very-light-gray;
+                color: $very-light-gray;
+                margin-bottom: -4px;
             }
         }
 
@@ -216,8 +241,9 @@ font-size:15px;
 
             .btn:hover{
                 background-color: $very-dark-cyan;
-                border: solid white;
-                color: white;
+                border: 2px solid $very-light-gray;
+                color: $very-light-gray;
+                margin-bottom: -4px;
             }
         }
     }
