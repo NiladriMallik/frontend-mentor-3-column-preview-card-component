@@ -74,9 +74,8 @@ body{
 
     .btn{
         padding: .6rem 1.5rem;
-        
+        border: solid $very-light-gray;
         margin-left: .5rem;
-        border: 0;
         border-radius: 1.5rem;
         font-size: 1rem;
         font-family: "Lexend Deca";
@@ -93,10 +92,8 @@ body{
         }
 
         .btn:hover{
-            background-color: $bright-orange;
-            border: 2px solid $very-light-gray;
+            background-color: $bright-orange;           
             color: $very-light-gray;
-            margin-bottom: -4px;
 
         }
         
@@ -112,9 +109,7 @@ body{
 
         .btn:hover{
             background-color: $dark-cyan;
-            border: 2px solid $very-light-gray;
             color: $very-light-gray;
-            margin-bottom: -4px;
 
         }
     }
@@ -130,10 +125,7 @@ body{
 
         .btn:hover{
             background-color: $very-dark-cyan;
-            border: 2px solid $very-light-gray;
             color: $very-light-gray;
-            margin-bottom: -4px;
-
         }
     }
 }
@@ -165,6 +157,7 @@ body{
 
         .btn{
             cursor: pointer;
+            border: 2px solid $very-light-gray;
         }
 
 
@@ -206,11 +199,8 @@ body{
             margin-top: 3rem;
             margin-bottom: .7rem;
             cursor: pointer;
+            border: solid $very-light-gray;
         }
-
-        // .btn:hover{
-        //     padding: 1rem solid ;
-        // }
 
 
         .sedan{
@@ -218,9 +208,8 @@ body{
 
             .btn:hover{
                 background-color: $bright-orange;
-                border: 2px solid $very-light-gray;
+                
                 color: $very-light-gray;
-                margin-bottom: -4px;
             }
         }
 
@@ -229,10 +218,8 @@ body{
                 margin-top: 4.2rem;
             }
             .btn:hover{
-                background-color: $dark-cyan;
-                border: 2px solid $very-light-gray;
-                color: $very-light-gray;
-                margin-bottom: -4px;
+                background-color: $dark-cyan;              
+                color: $very-light-gray;         
             }
         }
 
@@ -241,9 +228,7 @@ body{
 
             .btn:hover{
                 background-color: $very-dark-cyan;
-                border: 2px solid $very-light-gray;
                 color: $very-light-gray;
-                margin-bottom: -4px;
             }
         }
     }
