@@ -37,7 +37,7 @@ Mobile version
 
 Tab version
 
-![tab](https://user-images.githubusercontent.com/51795733/149533025-2d1d0460-fcbf-4faa-91fb-7354d251dd77.png)
+![tab](https://user-images.githubusercontent.com/51795733/149549081-5adbac11-7999-417d-a86d-d0467068ac13.png)
 
 ### Links
 - [The live site URL](https://niladrimallik.github.io/frontend-mentor-3-column-preview-card-component/)
